@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.copy{
+    align-self: flex-start;
+}
+
+.year{
+    align-self: flex-end;
+}

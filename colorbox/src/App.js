@@ -1,5 +1,7 @@
 import Search from "./Components/Search/Search";
 import ColorBox from "./Components/ColorBox/ColorBox";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 import { useState } from "react";
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
   const [isDarkText, setIsDarkText] = useState(true);
   return (
     <div className="App">
+      <Header colorValue={colorValue} isDarkText={isDarkText} />
       <ColorBox
         colorValue={colorValue}
         hexValue={hexValue}
@@ -20,6 +23,7 @@ function App() {
         isDarkText={isDarkText}
         setIsDarkText={setIsDarkText}
       />
+      <Footer colorValue={colorValue} isDarkText={isDarkText} />
     </div>
   );
 }

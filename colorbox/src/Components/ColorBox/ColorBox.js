@@ -11,7 +11,7 @@ const ColorBox = ({ colorValue, hexValue, isDarkText }) => {
           color: isDarkText ? "#000" : "#FFF",
         }}
       >
-        <p>{colorValue ? colorValue : "No Color Selected"}</p>
+        <p>{colorValue ? colorValue : "Enter a Color"}</p>
         <p>{hexValue ? hexValue : null}</p>
       </div>
     </div>
